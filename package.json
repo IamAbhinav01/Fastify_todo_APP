@@ -1,0 +1,29 @@
+{
+  "name": "fastify_crud_operations",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "Fastify",
+    "TODO",
+    "APP"
+  ],
+  "homepage": "https://github.com/IamAbhinav01/Fastify_todo_APP#readme",
+  "bugs": {
+    "url": "https://github.com/IamAbhinav01/Fastify_todo_APP/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamAbhinav01/Fastify_todo_APP.git"
+  },
+  "license": "MIT",
+  "author": "Abhinav Sunil",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fastify": "^5.8.2",
+    "fastify-plugin": "^5.1.0"
+  }
+}
