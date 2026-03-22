@@ -1,10 +1,14 @@
 const fp = require('fastify-plugin');
+const cors = require('@fastify/cors');
 const apiRouter = require('./routes/api/apiRouter');
 const db = require('./db/index');
 const todoRepository = require('./repositories/todo.repository');
 const todoService = require('./services/Todo.service');
 
 async function app(fastify, options) {
+  await fastify.register(cors, {
+    origin: '*', // For development purposes. In production, specify the actual origin.
+  });
   await fastify.register(db);
   await fastify.register(todoRepository);
   await fastify.register(todoService);

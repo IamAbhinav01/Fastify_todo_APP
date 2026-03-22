@@ -18,8 +18,14 @@ class TodoRepository {
     });
     return this.db.todos;
   }
-  async deleteOne(id) {}
-  async deleteAll() {}
+  async deleteOne(id) {
+    this.db.todos = this.db.todos.filter((todo) => todo.id != id);
+    return this.db.todos;
+  }
+  async deleteAll() {
+    this.db.todos = [];
+    return this.db.todos;
+  }
 }
 
 async function todoRepository(fastify, options) {
